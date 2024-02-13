@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Package Booking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles */
+      .package-details {
+        background-color: #f3f4f6;
+        border-radius: 1rem;
+        padding: 2rem;
+      }
+      .booking-details {
+        background-color: #f3f4f6;
+        border-radius: 1rem;
+        padding: 2rem;
+      }
+      .booking-summary {
+        background-color: #f3f4f6;
+        border-radius: 1rem;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-gray-900 text-white py-4">
+      <h1 class="text-center">Travel Package Booking</h1>
+    </header>
+    <nav class="bg-gray-800 text-white py-2">
+      <a href="#" class="mx-2">Home</a>
+      <a href="#" class="mx-2">Packages</a>
+      <a href="#" class="mx-2">About Us</a>
+      <a href="#" class="mx-2">Contact</a>
+    </nav>
+    <div class="container mx-auto mt-8 px-4">
+      <div
+        class="bg-white rounded-lg shadow-md p-6 grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
+        <div class="package-details">
+          <h2 class="text-2xl font-semibold mb-4">Package Details</h2>
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Travel Package"
+            class="w-full h-auto rounded-lg mb-4"
+          />
+          <div class="flex items-center mb-4">
+            <div>
+              <p class="text-gray-700">
+                <span class="font-semibold">Package:</span> Package 1
+              </p>
+              <p class="text-gray-700">
+                <span class="font-semibold">Destination:</span> Destination Name
+              </p>
+              <p class="text-gray-700">
+                <span class="font-semibold">Duration:</span> 7 Days / 6 Nights
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <p class="text-gray-700">
+                <span class="font-semibold">Tour Start:</span> January 1, 2025
+              </p>
+            </div>
+            <div>
+              <p class="text-gray-700">
+                <span class="font-semibold">Tour End:</span> January 7, 2025
+              </p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            <span class="font-semibold">Inclusions:</span> Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-gray-700">
+            <span class="font-semibold">Exclusions:</span> Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="booking-details">
+          <h2 class="text-2xl font-semibold mb-4">Booking Details</h2>
+          <form action="#" method="POST">
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div>
+                <label for="name" class="block text-gray-700 font-bold mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 font-bold mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-gray-700 font-bold mb-2"
+                  >Phone</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                  required
+                />
+              </div>
+              <div>
+                <label for="passport" class="block text-gray-700 font-bold mb-2"
+                  >Passport Number</label
+                >
+                <input
+                  type="text"
+                  id="passport"
+                  name="passport"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                  required
+                />
+              </div>
+            </div>
+            <h2 class="text-2xl font-semibold mb-4">Booking Summary</h2>
+            <div class="booking-summary mb-4">
+              <p class="text-gray-700">
+                <span class="font-semibold">Basic Package Charge:</span> $XXX
+              </p>
+              <p class="text-gray-700">
+                <span class="font-semibold">Tax Inclusion:</span> Included
+              </p>
+              <p class="text-gray-700">
+                <span class="font-semibold">Promo Code:</span> ABC123 (10%
+                discount)
+              </p>
+            </div>
+            <hr class="my-4" />
+            <div class="mb-4">
+              <p class="text-gray-700">
+                <span class="font-semibold">Final Payable Amount:</span> $YYY
+              </p>
+            </div>
+            <button
+              type="submit"
+              class="custom-button text-white py-2 px-4 rounded-md bg-gray-900 hover:bg-gray-700"
+            >
+              Confirm Booking
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-900 text-white py-4 mt-8">
+      <p class="text-center">
+        Contact us at: example@example.com | Phone: +123456789
+      </p>
+    </footer>
+  </body>
+</html>

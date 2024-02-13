@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Travel Packages</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-gray-900 text-white py-4">
+      <h1 class="text-center">Destination Travel Packages</h1>
+    </header>
+    <nav class="bg-gray-800 text-white py-2">
+      <a href="#" class="mx-2">Home</a>
+      <a href="#" class="mx-2">Packages</a>
+      <a href="#" class="mx-2">About Us</a>
+      <a href="#" class="mx-2">Contact</a>
+    </nav>
+    <div class="container mx-auto mt-8 px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <a href="#" class="text-lg font-semibold text-gray-900 mb-4 block"
+            >Travel Agency Name</a
+          >
+          <a href="#"
+            ><img
+              src="https://via.placeholder.com/300x200"
+              alt="Travel Agency"
+              class="mb-4 rounded-lg"
+          /></a>
+          <p class="text-gray-700">Description of Package 2 goes here.</p>
+          <p class="text-gray-700 mt-2">Price: $XXX</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <a href="#" class="text-lg font-semibold text-gray-900 mb-4 block"
+            >Travel Agency Name</a
+          >
+          <a href="#"
+            ><img
+              src="https://via.placeholder.com/300x200"
+              alt="Travel Agency"
+              class="mb-4 rounded-lg"
+          /></a>
+          <p class="text-gray-700">Description of Package 2 goes here.</p>
+          <p class="text-gray-700 mt-2">Price: $XXX</p>
+        </div>
+        <!-- Add more package cards as needed -->
+      </div>
+      <div class="mt-8">
+        <h2 class="text-lg font-semibold mb-4">Contact Us</h2>
+        <form action="#" method="POST" class="max-w-md">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full p-2 border border-gray-300 rounded mb-4"
+          /><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full p-2 border border-gray-300 rounded mb-4"
+          /><br />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            required
+            class="w-full p-2 border border-gray-300 rounded mb-4"
+          ></textarea
+          ><br />
+          <input
+            type="submit"
+            value="Send Message"
+            class="bg-gray-900 text-white py-2 px-4 rounded cursor-pointer"
+          />
+        </form>
+      </div>
+    </div>
+    <footer class="bg-gray-900 text-white py-4 mt-8">
+      <p class="text-center">
+        Contact us at: example@example.com | Phone: +123456789
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Add Package</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .image-upload-wrapper {
+      width: 150px;
+      height: 150px;
+      position: relative;
+    }
+    .image-upload-wrapper input[type="file"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+    .image-upload-placeholder {
+      width: 100%;
+      height: 100%;
+      border: 2px dashed #CBD5E0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .image-upload-placeholder::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-image: url('https://via.placeholder.com/50');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+    }
+    .image-upload-placeholder svg {
+      width: 30px;
+      height: auto;
+      fill: #4A5568;
+    }
+    .form-label {
+      font-weight: bold;
+    }
+    .form-input {
+      border-radius: 0.5rem;
+      border: 1px solid #E2E8F0;
+      padding: 0.75rem;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-gray-900 text-white py-4">
+    <h1 class="text-center">Admin - Add Package</h1>
+  </header>
+  <form action="#" method="POST">
+    <div class="container mx-auto mt-8 px-4">
+        <div class="bg-white rounded-lg shadow-md p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <h2 class="text-2xl font-semibold mb-4">Package Details</h2>
+            <div class="grid grid-cols-2 gap-4">
+            <div class="col-span-2 md:col-span-1">
+                <label for="image" class="form-label">Upload Image</label>
+                <div class="image-upload-wrapper">
+                <input type="file" id="image" name="image" accept="image/*" class="hidden">
+                <label for="image" class="image-upload-placeholder border border-gray-300 rounded-md cursor-pointer bg-gray-100 hover:bg-gray-200">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 12a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zM4 10a6 6 0 1112 0 6 6 0 01-12 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="mt-2 text-gray-500">Click to Upload Image</span>
+                </label>
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <label for="package_name" class="form-label">Package Name</label>
+                <input type="text" id="package_name" name="package_name" class="form-input" required>
+            </div>
+            <div class="col-span-2">
+                <label for="destination" class="form-label">Destination</label>
+                <input type="text" id="destination" name="destination" class="form-input" required>
+            </div>
+            <div class="col-span-2">
+                <label for="description" class="form-label">Description</label>
+                <textarea id="description" name="description" rows="4" class="form-input" required></textarea>
+            </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl font-semibold mb-4">Other Information</h2>
+            <div class="grid grid-cols-2 gap-4">
+            <div>
+                <label for="duration" class="form-label">Duration (Days)</label>
+                <input type="number" id="duration" name="duration" min="0" class="form-input" required>
+            </div>
+            <div>
+                <label for="start_date" class="form-label">Start Date</label>
+                <input type="date" id="start_date" name="start_date" class="form-input" required>
+            </div>
+            <div>
+                <label for="end_date" class="form-label">End Date</label>
+                <input type="date" id="end_date" name="end_date" class="form-input" required>
+            </div>
+            <div>
+                <label for="price" class="form-label">Price ($)</label>
+                <input type="number" id="price" name="price" min="0" step="0.01" class="form-input" required>
+            </div>
+            <div>
+                <label for="discount" class="form-label">Discount (%)</label>
+                <input type="number" id="discount" name="discount" min="0" max="100" step="0.01" class="form-input" required>
+            </div>
+            </div>
+        </div>
+        <div></div>
+        <div class="flex justify-end">
+            <button type="submit" class="bg-gray-900 hover:bg-gray-700 text-white px-4 py-2 rounded-md transition-colors duration-300">Add Package</button>
+        </div>
+    </div>
+</form>
+  
+</body>
+</html>
