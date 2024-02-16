@@ -1,1 +1,9 @@
-<h1>kismat</h1> 
+import React from 'react'
+
+const Header = () => {
+  return (
+    <div>Kismat</div>
+  )
+}
+
+export default Header
