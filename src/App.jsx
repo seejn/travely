@@ -21,34 +21,6 @@ const Template = ({ templateInfo }) => {
     );
 };
 function App() {
-    const templateInfos = [
-        {
-            id: 0,
-            pageName: "Admin Package Add",
-            fileName: "admin-package-add.html",
-            description: "Template for adding packages from admin panel.",
-        },
-        {
-            id: 1,
-            pageName: "Agency Profile",
-            fileName: "agency-profile.html",
-            description: "Template for displaying agency profiles.",
-        },
-        {
-            id: 2,
-            pageName: "Dashboard",
-            fileName: "dashboard.html",
-            description:
-                "Main dashboard template for displaying travel packages.",
-        },
-        {
-            id: 3,
-            pageName: "Order Package",
-            fileName: "order-package.html",
-            description: "Template for ordering packages.",
-        },
-    ];
-
     const templateCardContainer = templateInfos?.map((templateInfo) => (
         <div key={templateInfo.id} className='flex flex-wrap justify-center'>
             <Template templateInfo={templateInfo} />
