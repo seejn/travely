@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+
 function App() {
-    return <>
-      <h1 className="bg-red-500">kismat</h1>
-    </>;
+    return (
+        <>
+            <Header />
+        </>
+    );
 }
 
 export default App;
