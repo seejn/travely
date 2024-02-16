@@ -1,11 +1,11 @@
-import Header from "./components/Header";
-import Package_item from "./components/Package_item";
+// import Header from "./components/Header";
+import LandingTemplate from "./components/LandingTemplate";
 
 function App() {
     return (
         <>
-            <Header />
-            <Package_item/>
+            {/* <Header /> */}
+            {LandingTemplate}
         </>
     );
 }
