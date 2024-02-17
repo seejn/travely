@@ -1,4 +1,4 @@
-import TemplateCardContainer from "./TemplateCardContainer";
+import TemplateCardContainer from "../components/TemplateCardContainer";
 const LandingTemplate = (
     <>
         <div className='container mx-auto p-8'>
